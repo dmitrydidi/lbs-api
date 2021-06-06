@@ -15,7 +15,29 @@ object LongBoardsApp extends App {
   val initialRoute =
     path("api" / "longboard") {
       get {
-        complete(StatusCodes.OK)
+        path("mark" / Segment) { _ =>
+          reject
+        } ~
+        path("model" / Segment) { _ =>
+          reject
+        } ~
+        parameter('id) { _ =>
+          reject
+        } ~
+        pathEndOrSingleSlash {
+          reject
+        }
+      } ~
+      post {
+        reject
+      } ~
+      delete {
+        parameter('id) { _ =>
+          reject
+        }
+      } ~
+      put {
+        reject
       }
     }
 
