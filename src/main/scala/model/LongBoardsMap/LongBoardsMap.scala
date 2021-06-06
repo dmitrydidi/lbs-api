@@ -1,8 +1,8 @@
-package model
+package model.LongBoardsMap
+
+import model.LongBoard.LongBoard
 
 object LongBoardsMap {
-
-  case class LongBoard(id: String, mark: String, model: String, quantity: Int)
   // POST
   case class Add(longBoard: LongBoard)
   // GET
