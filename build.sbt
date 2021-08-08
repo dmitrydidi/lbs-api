@@ -16,4 +16,6 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-http-testkit" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-testkit" % akkaVersion,
   "org.scalatest" %% "scalatest" % scalaTestVersion,
+  // mongo
+  "org.mongodb.scala" %% "mongo-scala-driver" % "2.9.0",
 )

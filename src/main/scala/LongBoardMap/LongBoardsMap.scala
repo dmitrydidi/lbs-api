@@ -1,10 +1,10 @@
-package model.LongBoardsMap
+package LongBoardMap
 
-import model.LongBoard.LongBoard
+import entity.{LongBoardRequest}
 
 object LongBoardsMap {
   // POST
-  case class Add(longBoard: LongBoard)
+  case class Add(longBoard: LongBoardRequest)
   // GET
   case object GetAll
   case class GetByMark(mark: String)
